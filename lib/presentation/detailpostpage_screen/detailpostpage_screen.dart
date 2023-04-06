@@ -1,3 +1,5 @@
+import '../acccountpage_is_login_true_page/acccountpage_is_login_true_page.dart';
+import '../discusspage_page/discusspage_page.dart';
 import '../homepage_page/homepage_page.dart';
 import 'controller/detailpostpage_controller.dart';
 import 'package:flutter/material.dart';

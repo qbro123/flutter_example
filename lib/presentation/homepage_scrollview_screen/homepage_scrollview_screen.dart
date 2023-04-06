@@ -1,3 +1,6 @@
+import '../acccountpage_is_login_true_page/acccountpage_is_login_true_page.dart';
+import '../discusspage_page/discusspage_page.dart';
+import '../homepage_page/homepage_page.dart';
 import '../homepage_scrollview_screen/widgets/listglobe1_item_widget.dart';
 import '../homepage_scrollview_screen/widgets/listprice1_item_widget.dart';
 import 'controller/homepage_scrollview_controller.dart';
