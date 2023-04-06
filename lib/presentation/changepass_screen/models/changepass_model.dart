@@ -1,1 +1,1 @@
-class ChangepassModel { }
+class ChangepassModel {}

@@ -1,5 +1,7 @@
-import 'package:get/get.dart';class Listall1ItemModel {Rx<String> allTxt = Rx("lbl_all".tr);
+import 'package:get/get.dart';
 
-String? id = "";
+class Listall1ItemModel {
+  Rx<String> allTxt = Rx("lbl_all".tr);
 
- }
+  String? id = "";
+}

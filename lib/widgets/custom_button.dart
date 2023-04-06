@@ -373,17 +373,20 @@ enum ButtonShape {
   RoundedBorder8,
   CustomBorderTL8,
 }
+
 enum ButtonPadding {
   PaddingAll14,
   PaddingAll4,
   PaddingAll10,
 }
+
 enum ButtonVariant {
   OutlineBlue60019,
   GradientBlue600Blue300,
   FillGray50,
   OutlineWhiteA70026,
 }
+
 enum ButtonFontStyle {
   RobotoBold18,
   NotoSansMedium14,

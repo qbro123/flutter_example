@@ -1,1 +1,1 @@
-class AcccountpageIsloginFalseModel { }
+class AcccountpageIsloginFalseModel {}

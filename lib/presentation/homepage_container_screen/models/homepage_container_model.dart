@@ -1,1 +1,1 @@
-class HomepageContainerModel { }
+class HomepageContainerModel {}

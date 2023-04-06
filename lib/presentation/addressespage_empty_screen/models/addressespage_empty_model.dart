@@ -1,1 +1,1 @@
-class AddressespageEmptyModel { }
+class AddressespageEmptyModel {}

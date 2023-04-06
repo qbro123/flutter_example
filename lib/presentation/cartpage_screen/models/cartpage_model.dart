@@ -1,1 +1,1 @@
-class CartpageModel { }
+class CartpageModel {}

@@ -1,5 +1,16 @@
-import 'package:tran_quoc__tuantq_s_application1/core/app_export.dart';import 'package:tran_quoc__tuantq_s_application1/presentation/app_navigation_screen/models/app_navigation_model.dart';class AppNavigationController extends GetxController {Rx<AppNavigationModel> appNavigationModelObj = AppNavigationModel().obs;
+import 'package:tran_quoc__tuantq_s_application1/core/app_export.dart';
+import 'package:tran_quoc__tuantq_s_application1/presentation/app_navigation_screen/models/app_navigation_model.dart';
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); } 
- }
+class AppNavigationController extends GetxController {
+  Rx<AppNavigationModel> appNavigationModelObj = AppNavigationModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+  }
+}

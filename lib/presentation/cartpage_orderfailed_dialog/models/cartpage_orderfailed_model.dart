@@ -1,1 +1,1 @@
-class CartpageOrderfailedModel { }
+class CartpageOrderfailedModel {}

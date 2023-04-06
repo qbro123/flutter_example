@@ -1,1 +1,1 @@
-class AddressespageModel { }
+class AddressespageModel {}

@@ -1,1 +1,1 @@
-class RegisterpagePrivacypolicyModel { }
+class RegisterpagePrivacypolicyModel {}

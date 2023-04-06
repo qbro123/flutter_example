@@ -1,1 +1,1 @@
-class OrderspageModel { }
+class OrderspageModel {}

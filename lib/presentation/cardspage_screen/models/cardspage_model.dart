@@ -1,1 +1,1 @@
-class CardspageModel { }
+class CardspageModel {}

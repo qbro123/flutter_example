@@ -1,1 +1,1 @@
-class RegisterpageOneModel { }
+class RegisterpageOneModel {}

@@ -1,1 +1,1 @@
-class DetailpostpageModel { }
+class DetailpostpageModel {}

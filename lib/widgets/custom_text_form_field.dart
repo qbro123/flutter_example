@@ -243,9 +243,11 @@ enum TextFormFieldPadding {
   PaddingT11,
   PaddingT1,
 }
+
 enum TextFormFieldShape {
   RoundedBorder4,
 }
+
 enum TextFormFieldVariant {
   None,
   UnderLineBlack900dd,
@@ -254,6 +256,7 @@ enum TextFormFieldVariant {
   OutlineGray50070,
   UnderLineGray600,
 }
+
 enum TextFormFieldFontStyle {
   RobotoRegular16,
   RobotoRegular16Bluegray8008b,

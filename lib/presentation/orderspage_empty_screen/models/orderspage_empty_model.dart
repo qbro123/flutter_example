@@ -1,1 +1,1 @@
-class OrderspageEmptyModel { }
+class OrderspageEmptyModel {}

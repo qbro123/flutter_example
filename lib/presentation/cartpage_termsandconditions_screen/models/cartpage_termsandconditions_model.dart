@@ -1,1 +1,1 @@
-class CartpageTermsandconditionsModel { }
+class CartpageTermsandconditionsModel {}

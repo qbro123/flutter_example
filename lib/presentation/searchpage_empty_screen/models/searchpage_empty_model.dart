@@ -1,1 +1,1 @@
-class SearchpageEmptyModel { }
+class SearchpageEmptyModel {}

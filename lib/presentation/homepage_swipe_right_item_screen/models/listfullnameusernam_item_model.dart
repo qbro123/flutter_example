@@ -1,13 +1,15 @@
-import 'package:get/get.dart';class ListfullnameusernamItemModel {Rx<String> titleTxt = Rx("msg_example_blog_1862".tr);
+import 'package:get/get.dart';
 
-Rx<String> groupFiveTxt = Rx("lbl_html".tr);
+class ListfullnameusernamItemModel {
+  Rx<String> titleTxt = Rx("msg_example_blog_1862".tr);
 
-Rx<String> groupSixTxt = Rx("lbl_css".tr);
+  Rx<String> groupFiveTxt = Rx("lbl_html".tr);
 
-Rx<String> groupSevenTxt = Rx("lbl_js".tr);
+  Rx<String> groupSixTxt = Rx("lbl_css".tr);
 
-Rx<String> groupEightTxt = Rx("lbl_ts".tr);
+  Rx<String> groupSevenTxt = Rx("lbl_js".tr);
 
-String? id = "";
+  Rx<String> groupEightTxt = Rx("lbl_ts".tr);
 
- }
+  String? id = "";
+}

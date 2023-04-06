@@ -220,14 +220,17 @@ enum DropDownPadding {
   PaddingT2,
   PaddingT15,
 }
+
 enum DropDownShape {
   RoundedBorder8,
 }
+
 enum DropDownVariant {
   None,
   UnderLineBlack900dd,
   OutlineBlack90019,
 }
+
 enum DropDownFontStyle {
   RobotoRegular16,
   NotoSansRegular16,

@@ -1,1 +1,1 @@
-class HomepageOrdersuccessModel { }
+class HomepageOrdersuccessModel {}

@@ -1,7 +1,9 @@
-import 'package:get/get.dart';class ListcokeItemModel {Rx<String> cokeTxt = Rx("lbl_coke".tr);
+import 'package:get/get.dart';
 
-Rx<String> threeTxt = Rx("lbl_33".tr);
+class ListcokeItemModel {
+  Rx<String> cokeTxt = Rx("lbl_coke".tr);
 
-String? id = "";
+  Rx<String> threeTxt = Rx("lbl_33".tr);
 
- }
+  String? id = "";
+}

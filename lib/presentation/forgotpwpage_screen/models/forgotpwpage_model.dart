@@ -1,1 +1,1 @@
-class ForgotpwpageModel { }
+class ForgotpwpageModel {}

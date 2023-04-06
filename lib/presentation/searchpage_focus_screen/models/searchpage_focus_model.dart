@@ -1,1 +1,1 @@
-class SearchpageFocusModel { }
+class SearchpageFocusModel {}

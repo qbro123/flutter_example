@@ -1,1 +1,1 @@
-class SearchpageFoundModel { }
+class SearchpageFoundModel {}

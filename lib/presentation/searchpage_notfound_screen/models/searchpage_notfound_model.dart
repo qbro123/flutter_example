@@ -1,1 +1,1 @@
-class SearchpageNotfoundModel { }
+class SearchpageNotfoundModel {}

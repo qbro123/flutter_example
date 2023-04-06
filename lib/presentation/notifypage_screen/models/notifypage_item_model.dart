@@ -1,3 +1,5 @@
-import 'package:get/get.dart';class NotifypageItemModel {String? id = "";
+import 'package:get/get.dart';
 
- }
+class NotifypageItemModel {
+  String? id = "";
+}

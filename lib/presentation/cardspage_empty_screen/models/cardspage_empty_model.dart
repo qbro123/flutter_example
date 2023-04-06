@@ -1,1 +1,1 @@
-class CardspageEmptyModel { }
+class CardspageEmptyModel {}

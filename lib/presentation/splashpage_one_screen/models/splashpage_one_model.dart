@@ -1,1 +1,1 @@
-class SplashpageOneModel { }
+class SplashpageOneModel {}

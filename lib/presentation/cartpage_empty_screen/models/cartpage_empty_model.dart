@@ -1,1 +1,1 @@
-class CartpageEmptyModel { }
+class CartpageEmptyModel {}

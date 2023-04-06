@@ -1,1 +1,1 @@
-class NotifypageEmptyModel { }
+class NotifypageEmptyModel {}

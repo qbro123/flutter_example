@@ -1,7 +1,9 @@
-import 'package:get/get.dart';class ListmozzarellacheesOneItemModel {Rx<String> mozzarellacheesOneTxt = Rx("msg_mozzarella_cheese".tr);
+import 'package:get/get.dart';
 
-Rx<String> oneTxt = Rx("lbl_12".tr);
+class ListmozzarellacheesOneItemModel {
+  Rx<String> mozzarellacheesOneTxt = Rx("msg_mozzarella_cheese".tr);
 
-String? id = "";
+  Rx<String> oneTxt = Rx("lbl_12".tr);
 
- }
+  String? id = "";
+}

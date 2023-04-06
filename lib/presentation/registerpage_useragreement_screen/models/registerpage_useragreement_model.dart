@@ -1,1 +1,1 @@
-class RegisterpageUseragreementModel { }
+class RegisterpageUseragreementModel {}

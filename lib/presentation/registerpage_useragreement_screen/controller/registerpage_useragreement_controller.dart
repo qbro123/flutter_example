@@ -1,11 +1,27 @@
-import 'package:tran_quoc__tuantq_s_application1/core/app_export.dart';import 'package:tran_quoc__tuantq_s_application1/presentation/registerpage_useragreement_screen/models/registerpage_useragreement_model.dart';import 'package:flutter/material.dart';class RegisterpageUseragreementController extends GetxController {TextEditingController emailController = TextEditingController();
+import 'package:tran_quoc__tuantq_s_application1/core/app_export.dart';
+import 'package:tran_quoc__tuantq_s_application1/presentation/registerpage_useragreement_screen/models/registerpage_useragreement_model.dart';
+import 'package:flutter/material.dart';
 
-TextEditingController passwordController = TextEditingController();
+class RegisterpageUseragreementController extends GetxController {
+  TextEditingController emailController = TextEditingController();
 
-TextEditingController confirmpasswordController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
-Rx<RegisterpageUseragreementModel> registerpageUseragreementModelObj = RegisterpageUseragreementModel().obs;
+  TextEditingController confirmpasswordController = TextEditingController();
 
-@override void onReady() { super.onReady(); } 
-@override void onClose() { super.onClose(); emailController.dispose(); passwordController.dispose(); confirmpasswordController.dispose(); } 
- }
+  Rx<RegisterpageUseragreementModel> registerpageUseragreementModelObj =
+      RegisterpageUseragreementModel().obs;
+
+  @override
+  void onReady() {
+    super.onReady();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    emailController.dispose();
+    passwordController.dispose();
+    confirmpasswordController.dispose();
+  }
+}

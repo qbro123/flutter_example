@@ -1,4 +1,248 @@
-import '../searchpage_screen/widgets/searchpage_item_widget.dart';import 'controller/searchpage_controller.dart';import 'models/searchpage_item_model.dart';import 'package:flutter/material.dart';import 'package:tran_quoc__tuantq_s_application1/core/app_export.dart';import 'package:tran_quoc__tuantq_s_application1/widgets/app_bar/appbar_image.dart';import 'package:tran_quoc__tuantq_s_application1/widgets/app_bar/appbar_subtitle_1.dart';import 'package:tran_quoc__tuantq_s_application1/widgets/app_bar/custom_app_bar.dart';import 'package:tran_quoc__tuantq_s_application1/widgets/custom_text_form_field.dart';class SearchpageScreen extends GetWidget<SearchpageController> {@override Widget build(BuildContext context) { return SafeArea(child: Scaffold(resizeToAvoidBottomInset: false, backgroundColor: ColorConstant.whiteA700, appBar: CustomAppBar(height: getVerticalSize(54), leadingWidth: 46, leading: AppbarImage(height: getVerticalSize(15), width: getHorizontalSize(30), svgPath: ImageConstant.imgArrowleftBlueGray700, margin: getMargin(left: 16, top: 20, bottom: 19), onTap: onTapArrowleft), centerTitle: true, title: AppbarSubtitle1(text: "lbl_t_m_ki_m".tr), actions: [AppbarImage(height: getSize(24), width: getSize(24), imagePath: ImageConstant.imgSlider, margin: getMargin(left: 14, top: 15, right: 14, bottom: 15))], styleType: Style.bgShadowBlack9003f_1), body: SizedBox(width: size.width, child: SingleChildScrollView(child: Padding(padding: getPadding(bottom: 5), child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [Container(width: double.maxFinite, child: Container(padding: getPadding(left: 15, top: 9, right: 15, bottom: 9), decoration: AppDecoration.fillWhiteA700, child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Padding(padding: getPadding(top: 3), child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [CustomTextFormField(width: getHorizontalSize(299), focusNode: FocusNode(), controller: controller.groupFifteenController, hintText: "lbl_example".tr, variant: TextFormFieldVariant.OutlineGray50070, fontStyle: TextFormFieldFontStyle.RobotoRegular16Bluegray8008b, textInputAction: TextInputAction.done), Container(height: getVerticalSize(42), width: getHorizontalSize(52), child: Stack(alignment: Alignment.center, children: [CustomImageView(svgPath: ImageConstant.imgFolder, height: getVerticalSize(42), width: getHorizontalSize(52), radius: BorderRadius.circular(getHorizontalSize(4)), alignment: Alignment.center), CustomImageView(svgPath: ImageConstant.imgSearchWhiteA700, height: getSize(21), width: getSize(21), alignment: Alignment.center)]))])), Padding(padding: getPadding(top: 12), child: Row(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [Column(mainAxisAlignment: MainAxisAlignment.start, children: [Text("lbl_b_i_vi_t2".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoBold14), Padding(padding: getPadding(top: 9), child: SizedBox(width: getHorizontalSize(54), child: Divider(height: getVerticalSize(3), thickness: getVerticalSize(3), color: ColorConstant.red900)))]), Padding(padding: getPadding(left: 10, bottom: 12), child: Text("lbl_c_u_h_i".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoBold14)), Padding(padding: getPadding(left: 10, bottom: 12), child: Text("lbl_t_c_gi".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoBold14)), Spacer(), Padding(padding: getPadding(top: 6, bottom: 5), child: Text("lbl_10_k_t_qu".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoBold14Gray600))]))]))), Padding(padding: getPadding(left: 16, top: 1, right: 14), child: Obx(() => ListView.separated(physics: NeverScrollableScrollPhysics(), shrinkWrap: true, separatorBuilder: (context, index) {return SizedBox(height: getVerticalSize(11));}, itemCount: controller.searchpageModelObj.value.searchpageItemList.length, itemBuilder: (context, index) {SearchpageItemModel model = controller.searchpageModelObj.value.searchpageItemList[index]; return SearchpageItemWidget(model, onTapItemposts: onTapItemposts);})))])))))); } 
-onTapItemposts() { Get.toNamed(AppRoutes.detailpostpageScreen); } 
-onTapArrowleft() { Get.back(); } 
- }
+import '../searchpage_screen/widgets/searchpage_item_widget.dart';
+import 'controller/searchpage_controller.dart';
+import 'models/searchpage_item_model.dart';
+import 'package:flutter/material.dart';
+import 'package:tran_quoc__tuantq_s_application1/core/app_export.dart';
+import 'package:tran_quoc__tuantq_s_application1/widgets/app_bar/appbar_image.dart';
+import 'package:tran_quoc__tuantq_s_application1/widgets/app_bar/appbar_subtitle_1.dart';
+import 'package:tran_quoc__tuantq_s_application1/widgets/app_bar/custom_app_bar.dart';
+import 'package:tran_quoc__tuantq_s_application1/widgets/custom_text_form_field.dart';
+
+class SearchpageScreen extends GetWidget<SearchpageController> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+        child: Scaffold(
+            resizeToAvoidBottomInset: false,
+            backgroundColor: ColorConstant.whiteA700,
+            appBar: CustomAppBar(
+                height: getVerticalSize(54),
+                leadingWidth: 46,
+                leading: AppbarImage(
+                    height: getVerticalSize(15),
+                    width: getHorizontalSize(30),
+                    svgPath: ImageConstant.imgArrowleftBlueGray700,
+                    margin: getMargin(left: 16, top: 20, bottom: 19),
+                    onTap: onTapArrowleft),
+                centerTitle: true,
+                title: AppbarSubtitle1(text: "lbl_t_m_ki_m".tr),
+                actions: [
+                  AppbarImage(
+                      height: getSize(24),
+                      width: getSize(24),
+                      imagePath: ImageConstant.imgSlider,
+                      margin:
+                          getMargin(left: 14, top: 15, right: 14, bottom: 15))
+                ],
+                styleType: Style.bgShadowBlack9003f_1),
+            body: SizedBox(
+                width: size.width,
+                child: SingleChildScrollView(
+                    child: Padding(
+                        padding: getPadding(bottom: 5),
+                        child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                  width: double.maxFinite,
+                                  child: Container(
+                                      padding: getPadding(
+                                          left: 15,
+                                          top: 9,
+                                          right: 15,
+                                          bottom: 9),
+                                      decoration: AppDecoration.fillWhiteA700,
+                                      child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                                padding: getPadding(top: 3),
+                                                child: Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
+                                                    children: [
+                                                      CustomTextFormField(
+                                                          width:
+                                                              getHorizontalSize(
+                                                                  299),
+                                                          focusNode:
+                                                              FocusNode(),
+                                                          controller: controller
+                                                              .groupFifteenController,
+                                                          hintText:
+                                                              "lbl_example".tr,
+                                                          variant:
+                                                              TextFormFieldVariant
+                                                                  .OutlineGray50070,
+                                                          fontStyle:
+                                                              TextFormFieldFontStyle
+                                                                  .RobotoRegular16Bluegray8008b,
+                                                          textInputAction:
+                                                              TextInputAction
+                                                                  .done),
+                                                      Container(
+                                                          height:
+                                                              getVerticalSize(
+                                                                  42),
+                                                          width:
+                                                              getHorizontalSize(
+                                                                  52),
+                                                          child: Stack(
+                                                              alignment:
+                                                                  Alignment
+                                                                      .center,
+                                                              children: [
+                                                                CustomImageView(
+                                                                    svgPath:
+                                                                        ImageConstant
+                                                                            .imgFolder,
+                                                                    height:
+                                                                        getVerticalSize(
+                                                                            42),
+                                                                    width:
+                                                                        getHorizontalSize(
+                                                                            52),
+                                                                    radius: BorderRadius.circular(
+                                                                        getHorizontalSize(
+                                                                            4)),
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .center),
+                                                                CustomImageView(
+                                                                    svgPath:
+                                                                        ImageConstant
+                                                                            .imgSearchWhiteA700,
+                                                                    height:
+                                                                        getSize(
+                                                                            21),
+                                                                    width:
+                                                                        getSize(
+                                                                            21),
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .center)
+                                                              ]))
+                                                    ])),
+                                            Padding(
+                                                padding: getPadding(top: 12),
+                                                child: Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      Column(
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Text(
+                                                                "lbl_b_i_vi_t2"
+                                                                    .tr,
+                                                                overflow:
+                                                                    TextOverflow
+                                                                        .ellipsis,
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .left,
+                                                                style: AppStyle
+                                                                    .txtRobotoBold14),
+                                                            Padding(
+                                                                padding:
+                                                                    getPadding(
+                                                                        top: 9),
+                                                                child: SizedBox(
+                                                                    width:
+                                                                        getHorizontalSize(
+                                                                            54),
+                                                                    child: Divider(
+                                                                        height:
+                                                                            getVerticalSize(
+                                                                                3),
+                                                                        thickness:
+                                                                            getVerticalSize(
+                                                                                3),
+                                                                        color: ColorConstant
+                                                                            .red900)))
+                                                          ]),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              left: 10,
+                                                              bottom: 12),
+                                                          child: Text(
+                                                              "lbl_c_u_h_i".tr,
+                                                              overflow:
+                                                                  TextOverflow
+                                                                      .ellipsis,
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .left,
+                                                              style: AppStyle
+                                                                  .txtRobotoBold14)),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              left: 10,
+                                                              bottom: 12),
+                                                          child: Text(
+                                                              "lbl_t_c_gi".tr,
+                                                              overflow:
+                                                                  TextOverflow
+                                                                      .ellipsis,
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .left,
+                                                              style: AppStyle
+                                                                  .txtRobotoBold14)),
+                                                      Spacer(),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              top: 6,
+                                                              bottom: 5),
+                                                          child: Text(
+                                                              "lbl_10_k_t_qu"
+                                                                  .tr,
+                                                              overflow:
+                                                                  TextOverflow
+                                                                      .ellipsis,
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .left,
+                                                              style: AppStyle
+                                                                  .txtRobotoBold14Gray600))
+                                                    ]))
+                                          ]))),
+                              Padding(
+                                  padding:
+                                      getPadding(left: 16, top: 1, right: 14),
+                                  child: Obx(() => ListView.separated(
+                                      physics: NeverScrollableScrollPhysics(),
+                                      shrinkWrap: true,
+                                      separatorBuilder: (context, index) {
+                                        return SizedBox(
+                                            height: getVerticalSize(11));
+                                      },
+                                      itemCount: controller.searchpageModelObj
+                                          .value.searchpageItemList.length,
+                                      itemBuilder: (context, index) {
+                                        SearchpageItemModel model = controller
+                                            .searchpageModelObj
+                                            .value
+                                            .searchpageItemList[index];
+                                        return SearchpageItemWidget(model,
+                                            onTapItemposts: onTapItemposts);
+                                      })))
+                            ]))))));
+  }
+
+  onTapItemposts() {
+    Get.toNamed(AppRoutes.detailpostpageScreen);
+  }
+
+  onTapArrowleft() {
+    Get.back();
+  }
+}

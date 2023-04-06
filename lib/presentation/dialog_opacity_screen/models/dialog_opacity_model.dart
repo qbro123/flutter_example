@@ -1,1 +1,1 @@
-class DialogOpacityModel { }
+class DialogOpacityModel {}
